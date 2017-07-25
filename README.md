@@ -10,4 +10,5 @@ if [ -d $zshrc_root ]; then
     source `find $zshrc_root -maxdepth 1 -type f ! -name README.md`
 else
     echo "$zshrc_root not found"
-fi```
+fi
+```
