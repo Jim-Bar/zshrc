@@ -164,6 +164,8 @@ alias la="ll -A"
 alias dir="dir --color=auto"
 alias dirl="dir -lh"
 alias dira="dirl -A"
+alias cp="cp -i"
+alias mv="mv -i"
 
 # Populate the PATH
 addtopath /opt/pyth && alias pythdoc="nano /opt/pyth/rev-doc.txt" # Pyth
