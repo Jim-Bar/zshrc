@@ -70,7 +70,7 @@ function filetemp {
   echo $TMP_FILE
 }
 
-# Command that delete the last directory or file created with cdtemp or filetemp.
+# Command which deletes the last directory or file created with cdtemp or filetemp.
 function rmtemp {
   # Is TMP_LAST set?
   if [ -z ${TMP_LAST+x} ]; then
@@ -102,6 +102,9 @@ function rmtemp {
     unset TMP_LAST
   fi
 }
+
+# Command which does the same thing as rmtemp, but close the shell afterwards.
+alias exittemp="rmtemp && exit"
 
 # Prompt
 if [ $USER = root ]
