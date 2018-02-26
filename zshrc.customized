@@ -2,7 +2,7 @@
 function prependtopath {
     PATH_TO_ADD=$1
     if [ -d $PATH_TO_ADD ]; then
-        export PATH=$PATH:$PATH_TO_ADD
+        export PATH=$PATH_TO_ADD:$PATH
         return 0
     else
         echo "[ERROR] .zshrc: Asked to add $PATH_TO_ADD to the path, but the directory does not exist" 1>&2
@@ -14,7 +14,7 @@ function prependtopath {
 function appendtopath {
     PATH_TO_ADD=$1
     if [ -d $PATH_TO_ADD ]; then
-        export PATH=$PATH_TO_ADD:$PATH
+        export PATH=$PATH:$PATH_TO_ADD
         return 0
     else
         echo "[ERROR] .zshrc: Asked to add $PATH_TO_ADD to the path, but the directory does not exist" 1>&2
