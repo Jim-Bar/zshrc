@@ -12,3 +12,5 @@ else
     echo "$zshrc_root not found"
 fi
 ```
+
+Alternatively, do the same with `~/.zshrc` (only for the current user).
