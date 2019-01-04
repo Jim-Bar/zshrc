@@ -182,8 +182,8 @@ alias dira="dirl -A"
 alias cp="cp -i"
 alias mv="mv -i"
 
-# In SSH, the colour of tmux's status bar may be incorrect without setting TERM to xterm-256color.
-alias tmux="TERM=xterm-256color tmux"
+# In SSH, the colour of tmux's status bar may be incorrect without setting TERM to screen-256color.
+alias tmux="TERM=screen-256color tmux"
 
 # Populate the PATH
 appendtopath /opt/pyth && alias pythdoc="nano /opt/pyth/rev-doc.txt" # Pyth
