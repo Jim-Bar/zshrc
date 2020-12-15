@@ -198,3 +198,8 @@ export LS_COLORS
 # Only allow signed Docker images to run.
 # See https://runnable.com/docker/securing-your-docker-system
 export DOCKER_CONTENT_TRUST=1
+
+# Tilix fix: https://gnunn1.github.io/tilix-web/manual/vteconfig/
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte.sh
+fi
