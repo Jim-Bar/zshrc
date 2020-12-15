@@ -182,6 +182,15 @@ alias dira="dirl -A"
 alias cp="cp -i"
 alias mv="mv -i"
 
+# Useful aliases for adb logcat:
+alias lc="adb logcat -v time"
+alias lcc="adb logcat -c && lc"
+alias lcd="lc -d"
+alias lccd="adb logcat -c"
+alias lcg="lc | grep"
+alias lccg="lcc | grep"
+alias lcdg="lcd | grep"
+
 # Useful Git commands:
 alias gitls="git log --graph --decorate --oneline"
 function gittemp {
