@@ -190,6 +190,7 @@ alias lccd="adb logcat -c"
 alias lcg="lc | grep"
 alias lccg="lcc | grep"
 alias lcdg="lcd | grep"
+alias lcdtemp="lcd | filetemp"
 
 # Useful Git commands:
 alias gitls="git log --graph --decorate --oneline"
